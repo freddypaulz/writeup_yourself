@@ -1,0 +1,59 @@
+@import './abstracts/variables.scss';
+
+input {
+   // border: none;
+   border: 1px solid $light-blue;
+   border-radius: 5px;
+   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+   color: $dark-grey;
+   &:focus {
+      border-color: $secondary-color;
+      outline: 0;
+      background: $white;
+   }
+}
+textarea {
+   // border: none;
+   border: 1px solid $light-blue;
+   border-radius: 5px;
+   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+   color: $dark-grey;
+   &:focus {
+      border-color: $secondary-color;
+      outline: 0;
+      background: $white;
+   }
+}
+
+.cursor-pointer {
+   cursor: pointer;
+}
+
+.no-select {
+   -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Old versions of Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+   user-select: none; /* Non-prefixed version, currently
+                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.rotate-90 {
+   transform: rotate(90deg);
+   transition: all 0.3s;
+}
+
+.rotate-180 {
+   transform: rotate(-90deg);
+   transition: all 0.3s;
+}
+
+.font-weight-800 {
+   font-weight: 800;
+}
+
+.ex-container {
+   width: 90%;
+   margin: 0 auto;
+}

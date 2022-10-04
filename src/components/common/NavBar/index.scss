@@ -1,0 +1,27 @@
+@import '../../../assets/scss/index.scss';
+.navbar-container {
+   min-height: 70px;
+   background-color: $primary-color;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   &-username {
+      font-size: 2rem;
+      color: $white;
+      font-weight: 600;
+   }
+   &-logout {
+      font-size: 2.2rem;
+      & > button {
+         border-radius: 5px;
+         color: $white;
+         border: 2px solid $white;
+         background-color: $primary-color;
+         font-weight: bold;
+         &:hover {
+            border: 2px solid $red;
+         }
+      }
+   }
+}

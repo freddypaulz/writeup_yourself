@@ -1,0 +1,60 @@
+@import '../index.scss';
+.register-container {
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: $light-grey;
+   &-header {
+      font-size: 4rem;
+      margin-bottom: 15px;
+      color: $primary-color;
+   }
+   &-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 350px;
+      border-radius: 5px;
+      background-color: $white;
+      min-height: 500px;
+      padding: 10px;
+      &-error {
+         width: 100%;
+
+         & > label {
+            color: $red;
+            font-size: 1.3rem;
+         }
+      }
+      &-success {
+         width: 100%;
+         text-align: center;
+         & > label {
+            color: $primary-color;
+            font-size: 1.3rem;
+         }
+      }
+      .submit-button {
+         padding: 10px;
+         width: 150px;
+         border-radius: 5px;
+         font-size: 1.5rem;
+         color: $primary-color;
+         margin-top: auto;
+         border: 1px solid $light-blue;
+         &:hover {
+            border: 1px solid $primary-color;
+            color: $primary-color;
+         }
+      }
+   }
+   .login-link {
+      font-size: 1.6rem;
+      margin-top: 10px;
+      & > a {
+         color: $secondary-color;
+      }
+   }
+}

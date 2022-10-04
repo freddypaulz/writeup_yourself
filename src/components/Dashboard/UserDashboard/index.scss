@@ -1,0 +1,40 @@
+@import '../../../assets/scss/index.scss';
+
+.tab-container {
+   display: flex;
+   align-items: center;
+   margin: 0 20px;
+   &-item {
+      font-size: 2rem;
+      background-color: $light-grey;
+      padding: 10px;
+      margin-top: 10px;
+      margin-right: 5px;
+      border-radius: 10px 10px 0px 0px;
+      border-bottom: 2px solid $light-grey;
+      cursor: pointer;
+   }
+   .active {
+      border-bottom: 2px solid $primary-color;
+      color: $primary-color;
+   }
+}
+.user-dashboard-container {
+   min-height: 80vh;
+   background-color: $light-grey;
+   margin: 0 20px;
+   padding: 20px;
+   .writeup {
+      &-title {
+         font-size: 3rem;
+         font-weight: 600;
+         color: $dark-grey;
+      }
+      &-content {
+         font-size: 2rem;
+         max-height: 500px;
+         color: $dark-grey;
+         overflow-y: auto;
+      }
+   }
+}

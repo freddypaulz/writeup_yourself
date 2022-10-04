@@ -1,0 +1,36 @@
+@import './abstracts/_abstracts.scss';
+@import './common.scss';
+// @import '../icons/fonts/style.css';
+
+// @font-face {
+//    font-family: SFProText;
+//    src: url(../fonts/sf_pro_text_regular.ttf);
+//    font-weight: 400;
+//    font-display: swap;
+// }
+// @font-face {
+//    font-family: SFProText;
+//    src: url(../fonts/sf_pro_text_semibold.ttf);
+//    font-weight: 700;
+//    font-display: swap;
+// }
+// @font-face {
+//    font-family: SFProText;
+//    src: url(../fonts/sf_pro_text_bold.ttf);
+//    font-weight: 800;
+//    font-display: swap;
+// }
+// @font-face {
+//    font-family: SFProText;
+//    src: url(../fonts/sf_pro_text_black.ttf);
+//    font-weight: 900;
+//    font-display: swap;
+// }
+
+html,
+body {
+   margin: 0px;
+   padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 10px;
+}
