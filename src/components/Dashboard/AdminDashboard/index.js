@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import './index.scss';
+import './index.scss';
 
 export default function AdminDashboard() {
    const [users, setUsers] = useState([]);
