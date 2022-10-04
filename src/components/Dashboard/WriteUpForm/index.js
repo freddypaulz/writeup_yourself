@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import InputField from 'components/common/InputField';
 import InputTextArea from 'components/common/InputTextArea';
 import { validWriteUpTitle, validWriteUpContent } from 'helpers';

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import NavBar from 'components/common/NavBar';
@@ -8,7 +8,6 @@ import { userReducer, writeUpReducer } from 'reducers/dashboard';
 import 'assets/scss/pages/dashboard.scss';
 
 export default function Dashboard() {
-   const [user, setUser] = useState({});
    const dispatch = useDispatch();
    const navigate = useNavigate();
 
@@ -25,7 +24,6 @@ export default function Dashboard() {
       if (!currentUser) {
          navigate('/login', { replace: true });
       } else {
-         setUser(currentUser);
          dispatch(userReducer.actions.setUser(currentUser));
       }
       console.log('activeUser: ', activeUser);

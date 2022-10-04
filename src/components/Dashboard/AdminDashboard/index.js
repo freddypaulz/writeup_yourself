@@ -3,20 +3,18 @@ import './index.scss';
 
 export default function AdminDashboard() {
    const [users, setUsers] = useState([]);
-   let userList = [];
 
    useEffect(() => {
+      let userList = [];
       userList = JSON.parse(localStorage.getItem('Users'));
 
       if (userList) {
-         console.log('users found');
          setUsers(userList);
-      } else {
-         console.log('no users');
       }
    }, []);
 
    const toggleIsDisableHandler = (email) => {
+      let userList = [];
       userList = users;
       const index = userList.findIndex((user) => user.EmailAddress === email);
 
@@ -29,6 +27,7 @@ export default function AdminDashboard() {
    };
 
    const deleteUserHandler = (email) => {
+      let userList = [];
       userList = users;
       const index = userList.findIndex((user) => user.EmailAddress === email);
 
@@ -53,7 +52,7 @@ export default function AdminDashboard() {
                            <div className='users-data'>{EmailAddress}</div>
                            <div className='users-action-panel'>
                               <button
-                                 className='btn'
+                                 className=''
                                  onClick={() =>
                                     toggleIsDisableHandler(EmailAddress)
                                  }
@@ -69,7 +68,7 @@ export default function AdminDashboard() {
                                  )}
                               </button>
                               <button
-                                 className='btn'
+                                 className=''
                                  onClick={() => deleteUserHandler(EmailAddress)}
                               >
                                  <i class='fa-solid fa-trash'></i>
@@ -78,6 +77,7 @@ export default function AdminDashboard() {
                         </div>
                      );
                   }
+                  return null;
                }
             )}
          </div>

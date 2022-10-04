@@ -20,7 +20,7 @@ export default function UserDashboard({ userEmailId }) {
       console.log(userEmailId, writeUps);
       if (writeUps) {
          const writeUp = writeUps.find(
-            (writeUp) => writeUp.EmailAddress == userEmailId
+            (writeUp) => writeUp.EmailAddress === userEmailId
          );
          console.log(writeUp);
          if (writeUp !== undefined) {
@@ -40,7 +40,7 @@ export default function UserDashboard({ userEmailId }) {
 
       if (writeUps) {
          const index = writeUps.findIndex(
-            (writeUp) => writeUp.EmailAddress == userEmailId
+            (writeUp) => writeUp.EmailAddress === userEmailId
          );
          if (index !== -1) {
             writeUps.splice(index, 1, {
