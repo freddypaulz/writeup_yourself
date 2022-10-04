@@ -56,6 +56,29 @@ export default function Login() {
    useEffect(() => {
       localStorage.removeItem('currentUser');
       dispatch(writeUpReducer.actions.logout());
+
+      const users = JSON.parse(localStorage.getItem('Users'));
+      if (!users) {
+         localStorage.setItem(
+            'User',
+            JSON.stringify([
+               {
+                  FullName: 'Administrator',
+                  EmailAddress: 'admin@enerji.com',
+                  Password: '12345678',
+                  AccountType: 'Admin',
+                  IsDisabled: false,
+               },
+               {
+                  FullName: 'User',
+                  EmailAddress: 'user@gmail.com',
+                  Password: '12345678',
+                  AccountType: 'User',
+                  IsDisabled: false,
+               },
+            ])
+         );
+      }
    }, []);
 
    return (
