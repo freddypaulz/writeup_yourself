@@ -60,7 +60,7 @@ export default function Login() {
       const users = JSON.parse(localStorage.getItem('Users'));
       if (!users) {
          localStorage.setItem(
-            'User',
+            'Users',
             JSON.stringify([
                {
                   FullName: 'Administrator',
