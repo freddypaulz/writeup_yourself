@@ -16,7 +16,9 @@ export default function Register() {
       let errorsList = [];
 
       if (!validFullName.test(fullName)) {
-         errorsList.push('Full name should only contain alphabets');
+         errorsList.push(
+            'Full name should be 4 to 30 characters long and no numbers'
+         );
       }
       if (!validEmail.test(emailAddress)) {
          errorsList.push('enter valid email address');
